@@ -1,0 +1,108 @@
+@import url("style.css");
+
+/* Impostazioni generali */
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-side, .right-side{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Impostazioni per la parte sinistra */
+.left-side{
+    flex: 30%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: black;
+}
+@media (max-width: 800px) {
+    .left-side {
+        flex: 100%;
+        height: 40%;
+    }
+}
+
+/*          Profilo */
+.profile{
+    background-color: orange;
+    height: 70%;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+
+}
+
+@media (max-width: 800px) {
+    .profile{
+
+    }
+}
+/*         Fine Profilo */
+
+/*          Icone  */
+
+.icon-bar{
+    background-color: red;
+    height: 20%;
+}
+
+@media (max-width: 800px) {
+    .icon-bar{
+    }
+}
+/*          Fine icone */
+
+
+/* Fine parte sinistra
+
+/* Impostazioni per la parte destra */
+.right-side{
+    background-color: var(--right-background-color);
+    flex: 70%;
+    height: 100%;
+    align-items: center;
+    /*overflow: auto;*/
+}
+@media (max-width: 800px) {
+    .right-side {
+        flex: 100%;
+        height: 60%;
+    }
+}
+
+/*          Cards */
+.container{
+    height: 100%;
+    background-color: royalblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.card{
+    height: 120px;
+    width: 150px;
+    margin: 10px;
+    background-color: brown;
+}
+/*          Fine card */
+
+/* Fine parte destra
+
+
+
+
+
+/*          Generali */

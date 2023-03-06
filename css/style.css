@@ -1,0 +1,5 @@
+:root{
+    --left-background-color:red;
+    --right-background-color:#efefef;
+    --left-background-image: url("../images/bg.jpg");
+}
