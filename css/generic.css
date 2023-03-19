@@ -1,0 +1,500 @@
+@import url("style.css");
+
+/* Impostazioni generali */
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden; 
+
+}
+
+.left-side, .right-side{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Impostazioni per la parte sinistra */
+.left-side{
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    height: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    background-image: var(--left-background);
+}
+@media only screen and (max-width: 800px) {
+    .left-side {
+        flex: 100%;
+        height: auto;
+    }
+}
+
+
+/*          Profilo */
+.profile{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.profile-image{
+    align-items: center;
+    border-radius:100%;
+    border: 3px solid var(--profile-image-border-color);
+    box-shadow: 0 0 10px var(--profile-image-boxshadow);
+
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease-in-out;
+
+}
+.img{
+    height: 100%; width: 100%;
+    object-fit: cover;         
+    top: 0; left: 0;            
+
+}
+.profile-image:hover{
+    transform: scale(1.1);
+}
+
+.profile-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--profile-font-color);
+}
+.profile-title, .profile-text{
+    overflow: hidden;
+    font-family: var(--font);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.profile-title{
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: var(--profile-font-size-title);
+    font-weight: bold;
+    text-align: center;
+
+}
+.profile-text{
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.5;
+    font-size: var(--profile-font-size-text);
+    max-width: 400px;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 10px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .profile-image{
+        height: auto;
+        width: auto;
+        max-height: 150px;
+        max-width: 150px;
+        margin-right:20px;
+        margin-bottom: 0;
+
+    }
+    .profile{
+        flex-direction: row;
+    }
+    .profile-title,.profile-text{
+        text-align: start;
+        line-height: 1.1;
+    }
+    .profile-text{
+        max-width: none;
+    }
+}
+/*         Fine Profilo */
+
+/*          Icone  */
+
+.icon-bar{
+    display: flex;
+}
+.icon-bar a {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.icon-bar a:last-child {
+    margin-right: 0;
+}
+.icon-bar a .icon {
+    transition: transform 0.3s ease-out;
+    box-shadow: 0px 0px 10px var(--icons-boxshadow-color);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.icon-bar a:hover .icon {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px var(--icons-boxshadow-color-hover);/*rgba(255, 255, 255, 0.5);*/
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .icon-bar{
+    }
+}
+/*          Fine icone */
+
+
+/* Fine parte sinistra
+
+/* Impostazioni per la parte destra */
+.right-side{
+    flex: 70%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: center;
+
+    background-image: var(--right-background);
+    font-family: var(--font);
+
+    /*
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #e2e2e2 12%, transparent 12.5%, transparent 87%, #e2e2e2 87.5%, #e2e2e2), linear-gradient(150deg, #e2e2e2 12%, transparent 12.5%, transparent 87%, #e2e2e2 87.5%, #e2e2e2), linear-gradient(30deg, #e2e2e2 12%, transparent 12.5%, transparent 87%, #e2e2e2 87.5%, #e2e2e2), linear-gradient(150deg, #e2e2e2 12%, transparent 12.5%, transparent 87%, #e2e2e2 87.5%, #e2e2e2), linear-gradient(60deg, #e2e2e277 25%, transparent 25.5%, transparent 75%, #e2e2e277 75%, #e2e2e277), linear-gradient(60deg, #e2e2e277 25%, transparent 25.5%, transparent 75%, #e2e2e277 75%, #e2e2e277);
+    background-size: 24px 42px;
+    background-position: 0 0, 0 0, 12px 21px, 12px 21px, 0 0, 12px 21px
+     */
+
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--scroolbar-background-track);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroolbar-background-thumb);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroolbar-background-thumb-hover);
+}
+
+@media only screen and (max-width: 800px){
+    .right-side {
+        flex: 100%;
+        height: auto;
+    }
+}
+/*          Big cards */
+.big-card{
+
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    /*
+    background-color: var(--bigcard-background);
+    border: 1px solid var(--profile-image-border-color);
+    box-shadow: 0 0 10px var(--profile-image-boxshadow);
+     */
+    background-image: var(--bigcard-background);
+    /*backdrop-filter: blur(5px);*/
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+
+
+}
+.big-card:last-child{
+    margin-bottom: 0;
+}
+.big-card-title{
+    font-size: var(--bigcard-font-size);
+    color: var(--bigcard-font-color);
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 4px rgba(0,0,0,0.2);
+}
+@media only screen and (max-width: 800px){
+    .big-card-title{
+        font-size: var(--bigcard-font-size2);
+    }
+}
+/*          fine big card */
+
+
+/*          Cards */
+.container{
+    width: auto;
+    display: grid;
+    scroll-behavior: smooth;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 10px 10px 10px;
+}
+.container a{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+
+    border: 1px solid var(--projects-border-color);
+    box-shadow: 1px 1px 4px 3px var(--projects-boxshadow);
+    /*background-color: brown;*/
+
+    scroll-snap-align: start;
+
+}
+.card-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0; left: 0;
+}
+.card:hover .details{
+    opacity: 1;
+    height: 100%;
+}
+.details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: var(--projects-background);
+    opacity: 0;
+    transition: 0.5s ease;
+
+}
+
+.card-title{
+    font-size: var(--projects-font-size-title);
+    font-weight: 600;
+    color: var(--projects-font-color);
+}
+.card-description{
+    color: var(--projects-font-color);
+    margin: 2px 0;
+    font-size: var(--projects-font-size-text);
+    font-style: italic;
+}
+@media only screen and (max-width: 800px){
+    .card{
+        width: 300px;
+        height: 190px;
+    }
+    .details{
+        text-align: center;
+    }
+}
+
+/* aggiungere casomai icona github per collegamento?*/
+/*          Fine card */
+
+/*          Carrer cards */
+.career{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.career-card{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+
+    background: var(--careercard-background);
+    color: var(--careercard-color);
+    transition: all .3s;
+}
+.career-card:hover {
+    transform: scale(0.98);
+}
+.career-card:last-child{
+    margin-bottom: 0;
+}
+.career-card-qualification{
+    margin: 0;
+    padding: 0;
+    font-size: var(--careercard-font-size-quali);
+    font-weight: bold;
+    text-align: center;
+}
+.career-card-place{
+    margin: 0;
+    padding: 0;
+    font-size: var(--careercard-font-size-place);
+    text-align: center;
+}
+.career-card-years{
+    margin: 0;
+    padding: 0;
+    font-size: var(--careercard-font-size-years);
+    text-align: center;
+}
+@media only screen and (max-width: 400px){
+    .career-card-qualification{font-size: var(--careercard-font-size-quali2);}
+    .career-card-place{font-size: var(--careercard-font-size-place2);}
+    .career-card-years{font-size: var(--careercard-font-size-years2);}
+}
+/*          Fine carrer cards*/
+
+/*          skills */
+.skills{
+    display: flex;
+    gap: 5px;
+    height: 200px;
+}
+.skills p{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    transition: all .5s;
+    background: var(--skills-background);
+    border: 1px solid var(--skills-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills p:hover {
+    flex: 3;
+}
+
+.skills p span {
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: var(--skills-font-color);
+    font-size: var(--skills-font-size);
+    letter-spacing: 1px;
+}
+
+.skills p:hover span {
+    transform: rotate(0);
+}
+@media only screen and (max-width: 800px){
+    .skills p:hover {
+        flex: 4;
+        word-break: break-word;
+    }
+}
+@media only screen and (max-width: 400px){
+    .skills p span{font-size: var(--skills-font-size2);}
+}
+/*          fine skills */
+
+/*          interests */
+.interests{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card-interests{
+    height: 200px;
+    flex: 1 0 200px;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+.card-interests img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.interests-tooltip{
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    background-color: var(--interests-tooltip-background);
+    color: var(--interests-tooltip-font-color);
+    font-size: var(--interests-tooltip-fontsize);
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s;;
+}
+.card-interests:hover .interests-tooltip {
+    opacity: 1;
+}
+@media only screen and (max-width: 800px){
+
+    .card-interests{
+        height: 150px;
+        flex: 1 0 150px;
+    }
+
+}
+/*          fine interests */
+
+
+/* Fine parte destra
+
+
+
+
+
+/*          Generali */
