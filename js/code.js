@@ -1,14 +1,14 @@
 
 $(document).ready(function() {
     $.ajax({
-        url: "../json/myProject.json",
+        url: "https://username.github.io/MyPortfolio/json/myProject.json",
         dataType: "json",
         success: function(data) {
             generateCards(data);
         }
     });
     $.ajax({
-        url: "../json/myPerson.json",
+        url: "https://username.github.io/MyPortfolio/json/myPerson.json",
         dataType: "json",
         success: function(data) {
             generateInfo(data);
