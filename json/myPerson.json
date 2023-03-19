@@ -5,9 +5,9 @@
   "info": "currently attending the University of Calabria",
 
   "interests": [
-    {"type":"Fitness", "url": "../images/interests/gym.jpg"},
-    {"type":"Programming", "url": "../images/interests/programming.jpg"},
-    {"type":"Space", "url": "../images/interests/space.jpg"}
+    {"type":"Fitness", "url": "images/interests/gym.jpg"},
+    {"type":"Programming", "url": "images/interests/programming.jpg"},
+    {"type":"Space", "url": "images/interests/space.jpg"}
   ],
   "career": [
     {
