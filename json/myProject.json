@@ -16,13 +16,13 @@
       "title": "Generator Map",
       "description": "Parallel Algorithms And Distributed Systems project developed individually (2022)",
       "link": "https://github.com/AndreaYpmY/GeneratorMap",
-      "image": "../images/projects/generatorMap.png"
+      "image": "images/projects/generatorMap.png"
     },
     {
       "title": "Pong Ping",
       "description": "Simple Game for the school developed individually (2018).",
       "link": "#",
-      "image": "../images/projects/pongoPingo.png"
+      "image": "images/projects/pongoPingo.png"
     }
   ]
 }
