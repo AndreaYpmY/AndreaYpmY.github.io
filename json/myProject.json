@@ -19,6 +19,12 @@
       "image": "images/projects/generatorMap.png"
     },
     {
+      "title": "PriceTrackerBot",
+      "description": "Telegram bot script created individually (2023).",
+      "link": "https://github.com/AndreaYpmY/PriceTrackerBot",
+      "image": "images/projects/priceTrackerBot.JPG"
+    },
+    {
       "title": "Pong Ping",
       "description": "Simple Game for the school developed individually (2018).",
       "link": "#",
