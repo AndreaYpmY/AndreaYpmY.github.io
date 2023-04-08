@@ -1,24 +1,24 @@
 :root{
 
-    --left-background:linear-gradient(to bottom right,#7209B7, #4895EF);
+    --left-background:linear-gradient(to bottom right,#1B4332, #95D5B2);
 
-    --profile-image-boxshadow: #4CC9F0;
-    --profile-image-border-color: #480CA8;
+    --profile-image-boxshadow: #B7E4C7;
+    --profile-image-border-color: #081C15;
     --profile-font-color: white;
     --profile-font-size-text: 16px;
     --profile-font-size-title: 24px;
 
-    --icons-boxshadow-color: #3F37C9; 
-    --icons-boxshadow-color-hover: #560BAD ;
+    --icons-boxshadow-color: #081C15; /*rgba(0, 0, 0, 0.5)*/
+    --icons-boxshadow-color-hover: #B7E4C7 ;
 
-    --right-background:linear-gradient(to bottom,#3F37C9, #3F37C9);/*#efefef*/
+    --right-background:linear-gradient(to bottom,#081C15, #081C15);/*#efefef*/
 
-    --scroolbar-background-track: #3F37C9;
-    --scroolbar-background-thumb: #480CA8;
-    --scroolbar-background-thumb-hover:#560BAD ;
+    --scroolbar-background-track: #B7E4C7;
+    --scroolbar-background-thumb: #40916C;
+    --scroolbar-background-thumb-hover:#1B4332 ;
 
-    --bigcard-background: linear-gradient(to bottom right,#4361EE, #4CC9F0);
-    --bigcard-font-color: #3A0CA3;
+    --bigcard-background: linear-gradient(to bottom right,#1B4332, #2D6A4F);
+    --bigcard-font-color: white;
     --bigcard-font-size: 28px ;
     --bigcard-font-size2: 25px ;
 
@@ -26,11 +26,11 @@
     --projects-font-size-title: 20px;
     --projects-font-size-text: 12px;
     --projects-font-color: white;
-    --projects-background:rgba(63, 55, 201,0.7);
-    --projects-boxshadow: rgba(63, 55, 201,0.4);
-    --projects-border-color: #3A0CA3;
+    --projects-background:rgba(8, 28, 21,0.7);
+    --projects-boxshadow: rgba(8, 28, 21,0.4);
+    --projects-border-color: #081C15;
 
-    --careercard-background:linear-gradient(to bottom right,#3F37C9, #4361EE);/*#3F37C9*/
+    --careercard-background:linear-gradient(to bottom right,#74C69D, #1B4332);/*#3F37C9*/
     --careercard-color: white;
     --careercard-font-size-quali: 24px;
     --careercard-font-size-quali2: 20px;
@@ -39,13 +39,13 @@
     --careercard-font-size-place: 16px ;
     --careercard-font-size-place2: 12px ;
 
-    --skills-background: linear-gradient(to bottom right,#3A0CA3, #7209B7);
-    --skills-border-color: #B5179E;
+    --skills-background: linear-gradient(to bottom right,#40916C, #081C15);
+    --skills-border-color: white;
     --skills-font-color: white;
     --skills-font-size: 16px;
     --skills-font-size2: 12px;
 
-    --interests-tooltip-background: #480CA8;
+    --interests-tooltip-background: #2D6A4F;
     --interests-tooltip-font-color: white;
     --interests-tooltip-fontsize: 14px ;
 

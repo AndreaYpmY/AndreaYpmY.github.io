@@ -1,0 +1,53 @@
+:root{
+
+    --left-background:linear-gradient(to bottom right,#7209B7, #4895EF);
+
+    --profile-image-boxshadow: #4CC9F0;
+    --profile-image-border-color: #480CA8;
+    --profile-font-color: white;
+    --profile-font-size-text: 16px;
+    --profile-font-size-title: 24px;
+
+    --icons-boxshadow-color: #3F37C9; 
+    --icons-boxshadow-color-hover: #560BAD ;
+
+    --right-background:linear-gradient(to bottom,#3F37C9, #3F37C9);/*#efefef*/
+
+    --scroolbar-background-track: #3F37C9;
+    --scroolbar-background-thumb: #480CA8;
+    --scroolbar-background-thumb-hover:#560BAD ;
+
+    --bigcard-background: linear-gradient(to bottom right,#4361EE, #4CC9F0);
+    --bigcard-font-color: #3A0CA3;
+    --bigcard-font-size: 28px ;
+    --bigcard-font-size2: 25px ;
+
+
+    --projects-font-size-title: 20px;
+    --projects-font-size-text: 12px;
+    --projects-font-color: white;
+    --projects-background:rgba(63, 55, 201,0.7);
+    --projects-boxshadow: rgba(63, 55, 201,0.4);
+    --projects-border-color: #3A0CA3;
+
+    --careercard-background:linear-gradient(to bottom right,#3F37C9, #4361EE);/*#3F37C9*/
+    --careercard-color: white;
+    --careercard-font-size-quali: 24px;
+    --careercard-font-size-quali2: 20px;
+    --careercard-font-size-years: 14px;
+    --careercard-font-size-years2: 11px;
+    --careercard-font-size-place: 16px ;
+    --careercard-font-size-place2: 12px ;
+
+    --skills-background: linear-gradient(to bottom right,#3A0CA3, #7209B7);
+    --skills-border-color: #B5179E;
+    --skills-font-color: white;
+    --skills-font-size: 16px;
+    --skills-font-size2: 12px;
+
+    --interests-tooltip-background: #480CA8;
+    --interests-tooltip-font-color: white;
+    --interests-tooltip-fontsize: 14px ;
+
+    --font:sans-serif, Arial;
+}
