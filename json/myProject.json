@@ -1,6 +1,12 @@
 {
   "project": [
     {
+      "title": "The Great Escape",
+      "description": "Team collaboration on a Artificial Intelligence project (2023)",
+      "link": "https://github.com/AndreaYpmY/GreatEscape",
+      "image": "images/projects/greatescape.png"
+    },
+    {
       "title": "GoodVibes",
       "description": "Team collaboration on a web application project (2023)",
       "link": "https://github.com/AndreaYpmY/EventBoard",
