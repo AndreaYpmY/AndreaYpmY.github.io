@@ -1,0 +1,43 @@
+@import '../../styles/colors.css';
+
+
+.projects-page {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container {
+    margin-top: 70px; /* Distanza dall'AppBar (stessa altezza dell'AppBar) */
+    scroll-behavior: smooth;
+    overflow-y: auto; /* Permette lo scroll verticale */
+    padding: 20px; /* Spazio interno */
+    background-color: var(--background-projects); /* Colore di sfondo */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(345px,1fr)) !important; /* Crea colonne automatiche */
+    gap: 20px; /* Spazio tra le card */
+
+    justify-items: center; /* Centra le card */
+}
+
+.project-item {
+    /*display: flex;
+    flex-direction: column; /* Le card saranno disposte in colonna */
+    display: flex;
+    justify-content: center; /* Centra la card orizzontalmente */
+    align-items: flex-start; /* Allinea le card in alto */
+    max-width: 100%; /* Limita la larghezza al 100% del contenitore */
+}
+
+.grid{
+    justify-items: center !important;
+}
+
+@media (max-width: 600px) {
+    .projects-container {
+        margin-top: 55px; /* Distanza dall'AppBar (stessa altezza dell'AppBar) */
+    }
+}

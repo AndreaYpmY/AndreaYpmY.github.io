@@ -1,0 +1,74 @@
+@import '../../styles/colors.css';
+
+
+
+.app-bar {
+    background: var(--topbar-background) !important; /* Colore di sfondo variabile */
+    padding: 0 10px !important; /* Rimuovi padding */
+    box-shadow: none !important; /* Rimuovi ombra */
+    height: 70px !important; /* Altezza della barra */
+}
+
+.tool-bar {
+    height: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.logo {
+    height: 45px !important; 
+    width: 45px !important; 
+}
+
+.logo-button{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+  
+.nav-buttons-container {
+    /*background-color: black; /* di controllo */
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+  
+.nav-button {
+    margin: 0 !important;
+    margin-left: 10px !important; 
+
+    padding: 8px 16px !important;
+    border-radius: 5px !important;
+    font-size: 1rem !important;
+    border-color: var(--border-color) !important; 
+    background-color: var(--button-topbar-background) !important; 
+    color: var(--button-topbar-color) !important; 
+}
+  
+.nav-button:hover {
+    background-color: var(--button-topbar-background-hover) !important; 
+    color: var(--button-topbar-color-hover) !important; 
+    border-color: var(--border-color-hover) !important; 
+}
+
+@media (max-width: 600px) {
+    .app-bar {
+        height: 55px !important; /* Altezza più piccola per schermi piccoli*/ 
+        padding: 0 5px !important; /* Margini laterali ridotti */
+    }
+
+    .logo {
+        height: 35px !important; /* Riduci la dimensione del logo su schermi piccoli */
+        width: 35px !important; /* Riduci la dimensione del logo su schermi piccoli */
+    }
+
+
+    .nav-button {
+        font-size: 0.8rem !important; /* Riduci la dimensione del testo */
+        padding: 6px 10px !important; /* Riduci il padding dei pulsanti */
+        margin-left: 5px !important; /* Distanza più piccola tra i pulsanti*/ 
+
+    }
+}

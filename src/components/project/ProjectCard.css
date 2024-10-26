@@ -1,0 +1,140 @@
+@import '../../styles/colors.css';
+
+
+
+
+.project-card {
+    position: relative !important; /* Necessario per posizionare l'anno */
+    max-width: 100% !important; /* Larghezza massima al 100% del contenitore */
+    min-width: 345px !important; /* Larghezza minima per le card */
+    height: auto !important; /* Altezza automatica in base al contenuto */
+    margin: 20px !important; 
+    border-radius: 12px !important;
+    border: 1px solid var(--border-color-project) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Effetti di hover */
+    background-color: var(--background-project) !important; /* Colore di sfondo variabile */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05) !important; /* Ingrandimento su hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .project-card-year-badge {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    background-color: var(--background-badge) !important;
+    color: var(--color-badge) !important ;
+    padding: 5px 10px !important;
+    border-radius: 12px !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+  }
+  .github-icon {
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    background-color: var( --background-button) !important; /*rgba(255, 255, 255, 0.8); /* Sfondo bianco trasparente */
+    color: var(--color-text-button) !important;  /* #333;*/
+    padding: 4px !important;
+    border-radius: 50% !important;
+    font-size: 1.25rem !important;
+    transition: background-color 0.3s ease !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Effetti di hover */
+
+}
+
+.github-icon:hover {
+    transform: scale(1.05) !important; /* Ingrandimento su hover */
+    background-color: rgba(255, 255, 255, 1) !important;
+    background-color: var( --background-button-hover) !important; /*rgba(255, 255, 255, 0.8); /* Sfondo bianco trasparente */
+    color: var(--color-text-button-hover) !important;  /* #333;*/
+}
+
+.project-card-icons { /* for collaboration and context icons */
+  position: absolute !important;
+  top: 222px !important;
+  right: 10px !important;
+  display: flex !important;
+  justify-content: flex-end !important; /* Allinea le icone a destra */
+  align-items: center !important; /* Centra verticalmente le icone */
+  gap: 6px !important; /* Aggiunge spazio tra le icone */
+}
+
+.collaboration-icon,
+.context-icon {
+  border: 1px solid var(--icon-border-color) !important;
+  border-radius: 50% !important;
+  border-color: var(--icon-border-color) !important;
+  background-color: var(--icon-background-color) !important;
+  justify-content: center !important; /* Allinea le icone al centro */
+  align-items: center !important; /* Centra verticalmente le icone */
+  display: flex !important;
+  color: var(--icon-color) !important;
+  padding: 1.5px !important;
+  font-size: 1.25rem !important;
+  margin: 0 !important;
+}
+  
+  .project-card-image {
+    height: 250px !important;
+    object-fit: cover !important; /* L'immagine si adatta senza deformarsi */
+    border-bottom: 1px solid var(--border-color-project) !important;
+  }
+  
+  .project-card-content {
+    padding: 16px !important;
+    flex-grow: 1; /* Permette al contenuto di espandersi */
+  }
+  
+  .project-card-title {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    margin-bottom: 8px !important;
+    color: var(--title-color-project) !important;
+  }
+  
+  .project-card-description {
+    font-size: 0.875rem !important;
+    color: var(--description-color-project) !important;
+    overflow: hidden; /* Nasconde il contenuto in eccesso */
+    text-overflow: ellipsis; /* Aggiunge "..." per il testo in eccesso */
+    display: -webkit-box; /* Abilita il supporto per la troncatura del testo */
+    -webkit-box-orient: vertical; /* Imposta l'orientamento del box */
+    -webkit-line-clamp: 4; /* Limita il numero di righe (modifica in base alle tue necessità) */
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .project-card-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  /* Chip delle tecnologie */
+  .project-card-chip {
+    background-color: #e0e0e0;
+    color: #424242;
+    font-size: 0.85rem;
+  }
+  .project-card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+
+
+
+  

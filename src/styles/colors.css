@@ -1,0 +1,81 @@
+
+
+/* Variabili CSS */
+/*palette: 
+- #FCFFFD
+- #5D737E
+- #000000
+- #666
+*/
+:root {
+    --background-home: #FCFFFD; /* Colore di sfondo della home */
+    --text-home: #5D737E; /* Colore del font della home */
+    --border-color-image: #5D737E; /* Colore del bordo dell'immagine */
+
+    /*topbar*/
+    --topbar-background: #5D737E; /*rgba(30, 30, 30, 0.8); /* Colore della top bar 494b4d*/
+
+    --button-topbar-background: transparent; /* Colore di sfondo dei bottoni della top bar */
+    --border-color : #FCFFFD; /* Colore del bordo */
+    --button-topbar-color: #FCFFFD; /* Colore del font dei bottoni della top bar */
+
+    --button-topbar-background-hover: #FCFFFD; /* Colore di sfondo dei bottoni della top bar al passaggio del mouse */
+    --button-topbar-color-hover: #5D737E; /* Colore del font dei bottoni della top bar al passaggio del mouse */
+    --border-color-hover: #5D737E; /* Colore del bordo al passaggio del mouse */    
+    
+
+    /*container*/
+    --background-container: #FCFFFD; /* Colore di sfondo del container */
+    
+
+
+    /*info*/
+    --text-color-info: #000000; /* Colore del font dell'info */
+    --text-color-info-variable: #000000; /* Colore del font dell'info variabile */
+
+    /*carrer*/
+    --text-color-education: #000000; /* Colore del font dell'education */
+    --text-color-education-place: #666; /* Colore del font dell'education place */
+
+    /*interests*/
+    --background-interests: #FCFFFD; /* Colore di sfondo degli interessi */
+    --text-color-interests: #000000; /* Colore del font degli interessi */
+    --border-color-interests: #5D737E; /* Colore del bordo  */
+
+    /*social*/
+    --backcolor-social: white; /* Colore di sfondo dei social */
+    --backcolor-social-hover: rgba(0, 0, 0, 0.1); /* Colore di sfondo dei social al passaggio del mouse */
+    --color-social: #5D737E; /* Colore del font dei social */
+
+
+    /*project*/
+    --background-project: #FCFFFD; /* Colore di sfondo del progetto */
+    --border-color-project:#5D737E; /* Colore del bordo del progetto */
+
+    --icon-border-color: #5D737E; /* Colore del bordo dell'icona */
+    --icon-color: #5D737E; /* Colore dell'icona */
+    --icon-background-color: #FCFFFD; /* Colore di sfondo dell'icona */
+    
+    --background-badge: #5D737E; /* Colore di sfondo del badge del progetto */
+    --color-badge: #FCFFFD; /* Colore del font del badge del progetto */
+    
+    --title-color-project: #000000; /* Colore del font del progetto */
+    --description-color-project: #666; /* Colore della descrizione del progetto */
+    
+    --background-button: #5D737E; /* Colore di sfondo del pulsante del progetto */
+    --background-button-hover: #64B6AC; /* Colore di sfondo del pulsante del progetto al passaggio del mouse */
+    --color-text-button: #FCFFFD; /* Colore del font del pulsante del progetto */
+    --color-text-button-hover: #FCFFFD; /* Colore del font del pulsante del progetto al passaggio del mouse */
+    --background-button-disabled: #c2dfda; /* Colore di sfondo del pulsante del progetto disabilitato d3d3d3*/
+    --color-text-button-disabled: #64B6AC; /* Colore del font del pulsante del progetto disabilitato a0a0a0 */ 
+
+
+    /*projects*/
+    --background-projects: #FCFFFD; /* Colore di sfondo dei progetti */    
+
+
+
+
+
+
+}

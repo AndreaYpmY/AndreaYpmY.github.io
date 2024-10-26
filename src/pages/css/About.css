@@ -1,0 +1,250 @@
+@import '../../styles/colors.css';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    height: 100%;
+    width: 100vw; 
+    overflow-x: hidden; /* Per evitare scroll orizzontale, ma non bloccare scroll verticale */
+}
+
+.my-div {
+    height: 100vh !important; /* Riempi l'altezza della finestra */
+    width: 100% !important; /* Riempi la larghezza */
+    background-color: var(--background-home) !important; /* Sfondo */
+    text-align: center!important; /* Allinea il testo al centro */
+    overflow: hidden; /* Previeni overflow indesiderati */
+    justify-content: center; /* Centra verticalmente */
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    /*background-color: transparent; /* Test background */
+    overflow-y: auto !important; /* Scroll verticale */
+    margin-top: 70px !important; /* Spazio sopra */
+    padding-top: 35px !important;
+    height: calc(100% - 70px) !important; /* Altezza del container, sottraendo la TopBar */
+    width: 100% !important;
+    box-sizing: border-box !important; /* Per includere padding e border nel calcolo della dimensione */
+}
+.info-container {
+    display: flex !important; /* Usa flexbox per l'allineamento */
+    align-items: center !important; /* Centra verticalmente gli elementi */
+    justify-content: center !important; /* Centra orizzontalmente gli elementi */
+    padding: 16px; /* Aggiungi un padding per un aspetto migliore */
+    color:var(--text-color-info) !important; /* Colore del testo */
+}
+
+.avatar {
+    width: 300px !important; /* Larghezza dell'avatar */
+    height: 300px !important; /* Altezza dell'avatar */
+    border-radius: 50%;
+    background: var(--border-color-image);
+    border: 5px solid var(--border-color-image);
+    box-shadow: 0px 0px 10px rgba(88, 70, 70, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Effetti di hover */
+}
+.avatar:hover {
+    box-shadow: 0px 0px 20px rgba(88, 70, 70, 0.5);
+    transform: scale(1.05) !important; /* Ingrandimento su hover */
+}
+
+.info{
+    /*height: 100% !important; /* Altezza */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Allinea a sinistra */
+}
+
+.info h4{
+    /* Aumenta la dimensione del font */
+    font-size: 2rem;
+}
+.info h6{
+    /* Aumenta la dimensione del font */
+    font-size: 1.5rem;
+}
+
+/*------------------CARRER------------------*/
+.section-title {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+
+/* Contenitore generale per l'educazione */
+.education-container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stile per ogni elemento educativo (qualificazione e luogo) */
+.education-item {
+    margin-bottom: 16px;
+}
+
+/* Stile per il titolo della qualifica (in grassetto) */
+.qualification {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Stile per il luogo */
+.place {
+    font-size: 1rem;
+    color: var(--text-color-education-place);
+}
+/* ----------------------------------------------- */
+
+
+/*------------------INTERESTS------------------*/
+.interests-container {
+    margin-top: 16px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important; /* Centra le chip orizzontalmente */
+    align-items: center !important;     /* Allinea le chip verticalmente, se necessario */
+    gap: 8px !important;                /* Spazio tra le chip */
+  }
+  
+  .interest-chip {
+    /*font-size: 0.875rem !; /* Dimensione del testo nelle chip */
+    color: var(--text-color-interests) !important; /* Colore del testo */
+    border-color: var(--border-color-interests) !important; /* Colore del bordo */
+  }
+  
+/* ----------------------------------------------- */
+
+
+/* ------------------SOCIAL LINKS------------------ */
+.social-container {
+    /*margin-top: 32px !important; /* Distanza superiore dalla sezione precedente */
+    margin: 10px !important;
+    padding: 0 !important;
+    display: flex !important; /* Imposta il contenitore come flexbox */
+    justify-content: center !important; /* Centra orizzontalmente i contenuti */
+}
+
+.icon-button {
+    background-color: var(--backcolor-social) !important; /* Colore di sfondo */
+    border-radius: 50% !important; /* Rende i bottoni arrotondati */
+    margin: 8px !important; /* Margine uniforme per tutti i bottoni */
+    transition: background-color 0.3s !important; /* Aggiungi transizione per effetto hover */
+    
+}
+
+.icon-button:hover {
+    background-color: var(--backcolor-social-hover) !important; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+.icon-button:focus {
+    outline: none !important; /* Rimuovi il contorno del bottone quando in focus */
+}
+
+.custom-icon svg {
+    font-size: 30px !important; /* Imposta la dimensione personalizzata */
+    color: var(--color-social) !important; /* Colore dell'icona */
+}
+/* ----------------------------------------------- */
+
+@media (max-width: 700px) {
+    .avatar {
+        width: 250px !important; /* Riduci le dimensioni dell'avatar per schermi piccoli */
+        height: 250px !important; /* Riduci le dimensioni dell'avatar per schermi piccoli */
+    }
+}
+
+
+@media (max-width: 600px) {
+    
+    .container{
+        margin-top: 55px !important; /* Spazio sopra */
+        padding-top: 0 !important;
+    }
+    .info-container {
+        flex-direction: column !important; /* Cambia la direzione in colonna */
+        align-items: center !important; /* Centra gli elementi */
+    }
+
+    .avatar {
+        width: 150px !important; /* Riduci le dimensioni dell'avatar per schermi piccoli */
+        height: 150px !important; /* Riduci le dimensioni dell'avatar per schermi piccoli */
+        margin-bottom: 10px !important; /* Mantieni margine sotto */
+    }
+    .info h4, .info h6, .qualification, .place {
+        text-align: center !important; /* Allinea il testo al centro su schermi piccoli */
+    }
+
+    .section-title {
+        font-size: 1.2rem !important; /* Riduci la dimensione del font */
+    }
+
+    .info h4 {
+        font-size: 1.5rem !important; /* Riduci la dimensione del font */
+    }
+
+    .info h6 {
+        font-size: 1.2rem !important; /* Riduci la dimensione del font */
+    }
+
+    .qualification {
+        font-size: 1rem !important; /* Riduci la dimensione del font */
+    }
+
+    .place {
+        font-size: 0.8rem !important; /* Riduci la dimensione del font */
+    }
+
+
+    .icon-button {
+        margin: 4px !important; /* Riduci il margine */
+    }
+
+    .custom-icon svg {
+        font-size: 24px !important; /* Riduci la dimensione dell'icona */
+    }
+
+}
+
+
+
+
+/*
+.background-video,
+.video-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    position: relative; /* Cambiato a relative per sovrapporre il contenuto sopra lo sfondo 
+    z-index: 2; /* Assicurati che il contenuto sia sopra lo sfondo 
+    text-align: center;
+    color: var(--text-home);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+  
+
