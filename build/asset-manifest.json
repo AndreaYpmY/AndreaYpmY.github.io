@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca263209.css",
-    "main.js": "/static/js/main.bdf9f0b0.js",
-    "static/media/logo.png": "/static/media/logo.4028ed90d4905f86fc91.png",
-    "index.html": "/index.html",
-    "main.ca263209.css.map": "/static/css/main.ca263209.css.map",
-    "main.bdf9f0b0.js.map": "/static/js/main.bdf9f0b0.js.map"
+    "main.css": "/MyPortfolio/static/css/main.6fc7618f.css",
+    "main.js": "/MyPortfolio/static/js/main.3771d26f.js",
+    "static/media/mediaPlayer.png": "/MyPortfolio/static/media/mediaPlayer.006755dca4a6573ed846.png",
+    "static/media/greatescape.png": "/MyPortfolio/static/media/greatescape.7ec38798cd16403191b5.png",
+    "static/media/dp-sr.png": "/MyPortfolio/static/media/dp-sr.5a34b11e336568ab0db6.png",
+    "static/media/priceTrackerBot.JPG": "/MyPortfolio/static/media/priceTrackerBot.68d8b0add4a1cda4d6fe.JPG",
+    "static/media/goodVibes.JPG": "/MyPortfolio/static/media/goodVibes.6605dad37be8bae738f0.JPG",
+    "static/media/logo.png": "/MyPortfolio/static/media/logo.998859092a0bee859743.png",
+    "static/media/generatorMap.png": "/MyPortfolio/static/media/generatorMap.b3600e1d9a4362040d35.png",
+    "static/media/avatar.jpg": "/MyPortfolio/static/media/avatar.e2bfc98dd8d4ed6b811f.jpg",
+    "static/media/pongoPingo.png": "/MyPortfolio/static/media/pongoPingo.dd73e12c190018836f8f.png",
+    "index.html": "/MyPortfolio/index.html",
+    "main.6fc7618f.css.map": "/MyPortfolio/static/css/main.6fc7618f.css.map",
+    "main.3771d26f.js.map": "/MyPortfolio/static/js/main.3771d26f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca263209.css",
-    "static/js/main.bdf9f0b0.js"
+    "static/css/main.6fc7618f.css",
+    "static/js/main.3771d26f.js"
   ]
 }
