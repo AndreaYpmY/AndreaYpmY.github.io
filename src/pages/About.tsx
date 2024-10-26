@@ -26,7 +26,7 @@ const calculateAge = (birthDate: string): number => {
 
 const getImage = (imageName:any) => {
     try {
-        return require(`src/assets/${imageName}`);
+        return require(`./assets/${imageName}`);
     } catch (error) {
         //console.error(`Image ${imageName} not found`, error);
         return null; // o una immagine di fallback
