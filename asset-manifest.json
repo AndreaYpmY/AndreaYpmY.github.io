@@ -1,14 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.6fc7618f.css",
-    "main.js": "/static/js/main.abcf5cbb.js",
+    "main.js": "/static/js/main.078e3eb0.js",
+    "static/media/mediaPlayer.png": "/static/media/mediaPlayer.006755dca4a6573ed846.png",
+    "static/media/greatescape.png": "/static/media/greatescape.7ec38798cd16403191b5.png",
+    "static/media/dp-sr.png": "/static/media/dp-sr.5a34b11e336568ab0db6.png",
+    "static/media/priceTrackerBot.JPG": "/static/media/priceTrackerBot.68d8b0add4a1cda4d6fe.JPG",
+    "static/media/goodVibes.JPG": "/static/media/goodVibes.6605dad37be8bae738f0.JPG",
     "static/media/logo.png": "/static/media/logo.998859092a0bee859743.png",
+    "static/media/generatorMap.png": "/static/media/generatorMap.b3600e1d9a4362040d35.png",
+    "static/media/pongoPingo.png": "/static/media/pongoPingo.dd73e12c190018836f8f.png",
     "index.html": "/index.html",
     "main.6fc7618f.css.map": "/static/css/main.6fc7618f.css.map",
-    "main.abcf5cbb.js.map": "/static/js/main.abcf5cbb.js.map"
+    "main.078e3eb0.js.map": "/static/js/main.078e3eb0.js.map"
   },
   "entrypoints": [
     "static/css/main.6fc7618f.css",
-    "static/js/main.abcf5cbb.js"
+    "static/js/main.078e3eb0.js"
   ]
 }
