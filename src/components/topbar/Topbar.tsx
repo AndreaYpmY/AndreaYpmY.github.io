@@ -4,7 +4,6 @@ import { AppBar, Toolbar, IconButton, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu'; // Icona del menu, puoi scegliere un'altra icona se preferisci
 import './Topbar.css';
-import logo from '../../assets/logo.png';
 
 export function TopBar() {
   return (
@@ -12,7 +11,7 @@ export function TopBar() {
       <Toolbar className='tool-bar'>
           {/* Logo a sinistra */}
           <IconButton edge="start" className='logo-button'component={Link} to="/" >
-              <img src={logo} alt="Logo" className="logo" />
+              <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="Logo" className="logo" />
           </IconButton>
 
           {/* Pulsante per la sezione About e Project */}

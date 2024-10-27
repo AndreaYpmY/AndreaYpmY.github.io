@@ -2,11 +2,8 @@
 import React from "react";
 import "./css/About.css";
 import { Container, Typography, Avatar, Box, Grid, Button, IconButton, Divider, Stack, Chip} from '@mui/material';
-import data from "../assets/me.json";
+import data from "../json/me.json";
 import { TopBar } from "../components/topbar/Topbar";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
 import { SiGmail, SiGithub, SiInstagram, SiDiscord } from 'react-icons/si'; // Importa le icone social
 
 const calculateAge = (birthDate: string): number => {
@@ -26,7 +23,7 @@ const calculateAge = (birthDate: string): number => {
 
 const getImage = (imageName:any) => {
     try {
-        return require(`./assets/${imageName}`);
+        return require(`${process.env.PUBLIC_URL}/assets/${imageName}`);
     } catch (error) {
         //console.error(`Image ${imageName} not found`, error);
         return null; // o una immagine di fallback

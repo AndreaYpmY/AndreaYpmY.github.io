@@ -3,22 +3,22 @@ import "./css/Projects.css";
 import { Avatar, useMediaQuery, Stack, Container, Grid } from '@mui/material';
 import { TopBar } from "../components/topbar/Topbar";
 import { ProjectCard } from "../components/project/ProjectCard";
-import projects from "../assets/projects.json";
+import projects from '../json/projects.json';
 
 interface Project {
-    title: string;
-    description: string;
-    link: string;
-    image: string;
-    year: string; 
-    technologies: string[]; 
-    type: 'Individual' | 'Team';  // Tipizza 'type' come 'Individual' o 'Team'
-    context: String; 
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+  year: string; 
+  technologies: string[]; 
+  type: 'Individual' | 'Team';  // Tipizza 'type' come 'Individual' o 'Team'
+  context: string; 
 }
 
 const getImage = (imageName:any) => {
   try {
-      return require(`./assets/projects/${imageName}`);
+      return require(`${process.env.PUBLIC_URL}/assets/projects/${imageName}`);
   } catch (error) {
       //console.error(`Image ${imageName} not found`, error);
       return null; // o una immagine di fallback
