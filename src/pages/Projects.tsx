@@ -18,7 +18,7 @@ interface Project {
 
 const getImage = (imageName:any) => {
   try {
-      return require(`${process.env.PUBLIC_URL}/assets/projects/${imageName}`);
+      return require(`../../public/assets/projects/${imageName}`);
   } catch (error) {
       //console.error(`Image ${imageName} not found`, error);
       return null; // o una immagine di fallback
