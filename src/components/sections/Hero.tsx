@@ -82,7 +82,8 @@ const Hero = ({ data }: HeroProps) => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+          {/*<div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">*/}
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start pt-4">
             <a href="#projects">
               <Button>
                 View my work <ArrowRight size={18} />

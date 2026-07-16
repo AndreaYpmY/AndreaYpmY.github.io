@@ -65,7 +65,6 @@ const Projects = ({ data }: ProjectsProps) => {
         {/* 1. Progetti Featured (Zig-Zag Layout) */}
         <div className="space-y-24 md:space-y-32 mb-32">
           {featuredProjects.map((project, index) => {
-            // Alterna row e row-reverse su desktop
             const isEven = index % 2 === 0;
 
             return (
@@ -80,13 +79,15 @@ const Projects = ({ data }: ProjectsProps) => {
                   transitionDelay: `${index * 150}ms`
                 }}
               >
-                {/* Immagine con hover reveal */}
+                {/* Immagine con hover reveal solo da Desktop */}
                 <div className="w-full md:w-3/5 group relative rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl">
-                  <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-[2px] group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-500 z-10" />
+                  {/* MODIFICA: L'overlay è trasparente su mobile, ma scuro e sfocato su desktop finché non ci passi sopra */}
+                  <div className="absolute inset-0 transition-all duration-500 z-10 bg-transparent backdrop-blur-0 md:bg-slate-900/60 md:backdrop-blur-[2px] md:group-hover:bg-transparent md:group-hover:backdrop-blur-0" />
                   <img 
                     src={project.imageUrl} 
                     alt={project.title}
-                    className="w-full h-[300px] md:h-[400px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                    // MODIFICA: Effetto zoom (scale-105) applicato solo su desktop
+                    className="w-full h-[300px] md:h-[400px] object-cover object-center transform transition-transform duration-700 md:group-hover:scale-105"
                   />
                 </div>
 
@@ -165,11 +166,13 @@ const Projects = ({ data }: ProjectsProps) => {
                 >
                   {/* Immagine */}
                   <div className="relative h-48 overflow-hidden">
-                    <div className="absolute inset-0 bg-slate-900/70 group-hover:bg-slate-900/30 transition-all duration-500 z-10" />
+                    {/* MODIFICA: Anche qui overlay leggero di base, scuro su desktop */}
+                    <div className="absolute inset-0 transition-all duration-500 z-10 bg-slate-900/20 md:bg-slate-900/70 md:group-hover:bg-slate-900/30" />
                     <img 
                       src={project.imageUrl} 
                       alt={project.title} 
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                      // MODIFICA: Effetto zoom solo su desktop
+                      className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-105" 
                     />
                   </div>
                   

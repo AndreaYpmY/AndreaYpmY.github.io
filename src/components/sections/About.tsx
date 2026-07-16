@@ -58,10 +58,14 @@ const About = ({ data }: AboutProps) => {
           <div className="absolute -top-10 -left-10 w-[350px] h-[350px] bg-purple-600/20 rounded-full blur-[100px] -z-10" />
 
           <div className="relative w-full max-w-sm">
+            {/* 
+              MODIFICA QUI: Aggiunto md: davanti a grayscale per applicare l'effetto solo da PC. 
+              Su mobile sarà a colori di default.
+            */}
             <img
               src={data.profileImage}
               alt={data.title}
-              className="w-full aspect-[4/5] object-cover rounded-2xl border border-slate-700 grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl"
+              className="w-full aspect-[4/5] object-cover rounded-2xl border border-slate-700 md:grayscale md:hover:grayscale-0 transition-all duration-500 shadow-2xl"
             />
 
             {/* Card terminale coi quick facts (nascosta su mobile per non ingombrare) */}
