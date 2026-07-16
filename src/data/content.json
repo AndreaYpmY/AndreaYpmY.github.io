@@ -1,0 +1,184 @@
+{
+    "hero": {
+      "name": "Andrea Tocci",
+      "role": "Security & Automation Dev",
+      "tagline": "Cybersecurity student with a strong interest in AI and an endless curiosity to learn and explore.",
+      "socials": [
+        {
+          "platform": "GitHub",
+          "url": "https://github.com/AndreaYpmY",
+          "icon": "github"
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://instagram.com/andrea.t1_",
+          "icon": "instagram"
+        },
+        {
+          "platform": "Email",
+          "url": "mailto:tocci.andrea15@gmail.com",
+          "icon": "Email"
+        },
+        {
+          "platform": "Hack The Box",
+          "url": "https://profile.hackthebox.com/profile/019e5e85-334f-7308-8263-128c30e6a6a5",
+          "icon": "htb"
+        }
+      ]
+    },
+    "about": {
+      "title": "About me",
+      "description": [
+        "Passionate about web technologies, I am currently specializing in cybersecurity to gain a deep understanding of system vulnerabilities and defenses.",
+        "With an analytical mindset, I enjoy building custom tools and scripts to optimize workflows and simplify complex tasks. When I'm not in front of the terminal, you can find me working out, watching a good movie, or keeping up with the latest tech trends while listening to music."
+      ],
+      "profileImage": "/images/avatar.jpg",
+      "highlights": [
+        {
+          "icon": "mappin",
+          "label": "Location",
+          "value": "Cosenza, Italy"
+        },
+        {
+          "icon": "code",
+          "label": "Tools",
+          "value": "Scripting"
+        },
+        {
+          "icon": "calendar",
+          "label": "Status",
+          "value": "Student"
+        },
+        {
+          "icon": "coffee",
+          "label": "Interests",
+          "value": "Cybersec & AI"
+        }
+      ]
+    },
+    "skills": [
+      { "name": "Python", "category": "Software Development" },
+      { "name": "JavaScript / TypeScript", "category": "Software Development" },
+      { "name": "Java", "category": "Software Development" },
+      { "name": "C / C++", "category": "Software Development" },
+      { "name": "C#", "category": "Software Development" },
+      { "name": "Perl", "category": "Software Development" },
+      { "name": "React", "category": "Software Development" },
+      { "name": "Angular", "category": "Software Development" },
+      { "name": "Django", "category": "Software Development" },
+      { "name": "Linux / Bash Scripting", "category": "Cybersecurity" },
+      { "name": "Wireshark", "category": "Cybersecurity" },
+      { "name": "Nmap", "category": "Cybersecurity" },
+      { "name": "Gobuster", "category": "Cybersecurity" },
+      { "name": "BloodHound", "category": "Cybersecurity" },
+      { "name": "RustHound", "category": "Cybersecurity" },
+      { "name": "Docker", "category": "Tools & AI" },
+      { "name": "SSH / Networking", "category": "Tools & AI" }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "degree": "High School Diploma in Computer Science",
+            "school": "I.T.I. A. Monaco Cosenza",
+            "date": "2015 - 2020",
+            "description": ""
+        },
+        {
+            "id": 2,
+            "degree": "Bachelor's Degree in Computer Science (Artificial Intelligence)",
+            "school": "UNICAL Rende",
+            "date": "2020 - 2024",
+            "description": ""
+        },
+        {
+          "id": 2,
+          "degree": "Master's Degree in Computer Engineering (Cybersecurity)",
+          "school": "UNICAL Rende",
+          "date": "2024 - Currently",
+          "description": ""
+        }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "Stream Reasoner DP-sr",
+        "description": "Bachelor's Degree Thesis. Extension of the DP-SR engine for processing and analyzing heterogeneous, multi-source data streams in real-time.",
+        "techStack": ["Java", "Python", "Bash", "Apache Flink", "Apache Kafka", "Apache Pulsar"],
+        "imageUrl": "/images/dp-sr.png",
+        "repoLink": "#",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "The Great Escape",
+        "description": "Video game developed for the Artificial Intelligence exam. It implements intelligent agents capable of making autonomous decisions to solve scenarios.",
+        "techStack": ["Python", "Pygame", "ASP", "DLV2"],
+        "imageUrl": "/images/greatescape.png",
+        "repoLink": "https://github.com/AndreaYpmY/GreatEscape",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "Media Player UID",
+        "description": "Media player developed with a strong focus on usability and User Experience (User Interface Design exam).",
+        "techStack": ["Java", "JavaFX"],
+        "imageUrl": "/images/mediaPlayer.png",
+        "repoLink": "https://github.com/AndreaYpmY/MediaPlayerUID",
+        "featured": true
+      },
+      {
+        "id": 4,
+        "title": "GoodVibes",
+        "description": "Full-stack platform for creating and managing events. Team project developed for the Web Applications exam.",
+        "techStack": ["Java", "TypeScript", "Angular", "SpringBoot"],
+        "imageUrl": "/images/goodVibes.JPG",
+        "repoLink": "https://github.com/AndreaYpmY/EventBoard",
+        "featured": false
+      },
+      {
+        "id": 5,
+        "title": "QuestMaster",
+        "description": "A two-phase system designed to create interactive narrative experiences leveraging PDDL (Planning Domain Definition Language) and Large Language Models (LLMs).",
+        "techStack": ["PDDL", "LLM", "Python"],
+        "imageUrl": "/images/questMaster.png",
+        "repoLink": "https://github.com/AndreaYpmY/QuestMaster",
+        "featured": false
+      },
+      {
+        "id": 6,
+        "title": "AWS Serverless ML Pipeline",
+        "description": "Serverless AWS pipeline built for data preprocessing, machine learning model training, and real-time inference on the Room Occupancy Estimation dataset.",
+        "techStack": ["AWS", "Python", "Machine Learning", "AWS Lambda"],
+        "imageUrl": "/images/aws-pipeline.png",
+        "repoLink": "https://github.com/AndreaYpmY/aws-serverless-ml-pipeline",
+        "featured": false
+      },
+      {
+        "id": 7,
+        "title": "Generator Map",
+        "description": "Procedural map generator implemented using parallel algorithms and distributed systems logic.",
+        "techStack": ["C++", "MPI", "Allegro"],
+        "imageUrl": "/images/generatorMap.png",
+        "repoLink": "https://github.com/AndreaYpmY/GeneratorMap",
+        "featured": false
+      },
+      {
+        "id": 8,
+        "title": "PriceTrackerBot",
+        "description": "Python script to automate online price tracking via a custom Telegram Bot.",
+        "techStack": ["Python", "Telegram API"],
+        "imageUrl": "/images/priceTrackerBot.JPG",
+        "repoLink": "https://github.com/AndreaYpmY/PriceTrackerBot",
+        "featured": false
+      },
+      {
+        "id": 9,
+        "title": "Pong Ping",
+        "description": "Simple clone of the classic Pong game. One of the first programming projects developed during school.",
+        "techStack": ["Visual C#"],
+        "imageUrl": "/images/pongoPingo.png",
+        "repoLink": "#",
+        "featured": false
+      }
+    ]
+}
