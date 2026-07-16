@@ -4,7 +4,7 @@
  * Layout responsive: impilato su mobile, in riga su desktop.
  */
 
-import { Github, Linkedin, Instagram, Mail } from "lucide-react";
+import { Github, Instagram, Mail } from "lucide-react";
 
 // SVG custom per Hack The Box (manca in lucide-react)
 const HackTheBoxIcon = ({ size = 24, className = "" }: { size?: number | string, className?: string }) => (
@@ -36,7 +36,6 @@ interface FooterProps {
 // Map per instanziare l'icona corretta passata dal JSON
 const iconMap: Record<string, any> = {
   github: Github,
-  linkedin: Linkedin,
   instagram: Instagram,
   email: Mail,
   mail: Mail,

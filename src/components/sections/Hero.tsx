@@ -3,7 +3,7 @@
  * Prima sezione visibile. Layout a due colonne su desktop: info a sinistra, mockup editor a destra.
  */
 
-import { ArrowRight, Download, Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Download, Github, Instagram, Mail } from "lucide-react";
 import Button from "../ui/Button";
 import type { HeroSection } from "../../types";
 
